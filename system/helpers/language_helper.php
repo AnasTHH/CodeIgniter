@@ -63,6 +63,7 @@ if ( ! function_exists('lang'))
 	 */
 	function lang($line, $for = '', $attributes = array())
 	{
+		if(get_instance()->lang->line($line)!="")
 		$line = get_instance()->lang->line($line);
 
 		if ($for !== '')
